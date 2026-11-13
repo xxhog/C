@@ -1,0 +1,3 @@
+@model HomeCakes.Models.RegisterModel
+@{ViewData["Title"]="Регистрация";}
+<section class="auth-wrap"><form class="form-card auth-card" asp-action="Register" method="post"><span class="eyebrow">СОЗДАЙТЕ АККАУНТ</span><h1>Регистрация</h1><div asp-validation-summary="All" class="validation"></div><label>Имя<input asp-for="Name"/></label><label>E-mail<input asp-for="Email" type="email"/></label><label>Пароль<input asp-for="Password" type="password"/><small>Не менее 8 символов.</small></label><button class="button full">Зарегистрироваться</button><p>Уже есть аккаунт? <a asp-action="Login">Войти</a></p></form></section>

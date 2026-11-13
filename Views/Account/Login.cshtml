@@ -1,0 +1,4 @@
+@model HomeCakes.Models.LoginModel
+@{ViewData["Title"]="Вход";}
+<section class="auth-wrap"><form class="form-card auth-card" asp-action="Login" method="post"><span class="eyebrow">РАДЫ ВАС ВИДЕТЬ</span><h1>Войти в кабинет</h1><div asp-validation-summary="All" class="validation"></div><label>E-mail<input asp-for="Email" type="email"/></label><label>Пароль<input asp-for="Password" type="password"/></label><button class="button full">Войти</button><p>Ещё нет аккаунта? <a asp-action="Register">Зарегистрироваться</a></p></form></section>
+

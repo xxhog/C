@@ -1,0 +1,2 @@
+@{ViewData["Title"]="Настройки профиля";}
+<section class="auth-wrap"><form class="form-card auth-card" asp-action="Edit" method="post"><span class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</span><h1>Ваш профиль</h1><label>Имя<input name="name" value="@Context.Session.GetString("UserName")" required/></label><label>E-mail<input value="@Context.Session.GetString("UserEmail")" disabled/></label><button class="button full">Сохранить</button><p><a asp-action="Profile">Вернуться в кабинет</a></p></form></section>
